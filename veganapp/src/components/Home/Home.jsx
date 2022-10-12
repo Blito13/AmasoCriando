@@ -2,11 +2,15 @@ import React from "react";
 import bagels from "../../media/baggles.jpg" 
 import styles from "./Home.module.css"
 import About from "../About/AboutUs";
+import Card from "../Cards/Card";
 const Home = () => {
     return (
         <div>
              <About></About>
     <section  >
+        <div>
+            <Card></Card>
+        </div>
         {/* a esto hay que hacer con  cartas y map */}
         <div className={styles.container}>
          <h2>Algunos de Nuestros Productos</h2>
