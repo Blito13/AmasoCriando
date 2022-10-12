@@ -1,0 +1,56 @@
+.container{
+    background-color: #cb8665;
+    width: 100%;
+    min-width: 360px;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    
+   
+}
+.h2{
+    text-align: center;
+    padding: 1em 0;
+}
+
+.text{
+    display: none;
+    
+}
+
+.card{
+    padding: 5em;
+    height: 300px;
+    border: 1px solid #804000;
+    border-radius: 2em;
+    margin: 1em 0;
+    background-position: center center;
+    background-size:cover;
+    box-shadow:1px 1px 2px #333;
+    background-repeat: no-repeat;
+     }
+
+/* .uno{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2) 
+    ),url(../../media/baggles.jpg);
+}
+.dos{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2) 
+    ),url(../../media/brownie.jpg);
+}
+.tres{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2) 
+    ),url(../../media/baggles.jpg);
+} */
+.productos h3{
+    text-align: center;
+}
