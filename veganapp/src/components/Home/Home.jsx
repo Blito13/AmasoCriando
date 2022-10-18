@@ -3,6 +3,11 @@ import bagels from "../../media/baggles.jpg"
 import styles from "./Home.module.css"
 import About from "../About/AboutUs";
 import Card from "../Cards/Card";
+import {useDispatch} from "react-redux"
+import { useEffect } from "react";
+useEffect = () => {
+
+}
 const Home = () => {
     return (
         <div>

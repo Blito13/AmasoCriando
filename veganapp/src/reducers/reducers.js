@@ -2,8 +2,8 @@ import { GET_PLAYERS} from "../actions/actions";
 /* import data from "../components/data" */
 
 const initialState = {
-players : [] ,
-ganadores : []
+cards : [] ,
+products: []
 
 }
 
