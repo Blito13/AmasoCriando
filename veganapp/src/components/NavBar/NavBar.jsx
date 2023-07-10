@@ -1,17 +1,18 @@
 import React from "react";
 import styles from "./NavBar.module.css"
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return(
         <div className={styles.container}>
-        <p className={styles.logo}>Amaso Criando{/* <br> */}Pasteleria Integral Vegana</p>
+        <p className={styles.logo}>Amaso Criando</p>
         <nav className={styles.nav}>
-            <a /* href="index.html" */>Inicio</a>
-            <a href="#hero">Quienes Somos?</a>
-            <a /* href="#prod" */>Nuestros Productos</a>
-            <a /* href="#contact" */>Contactanos</a>
+            <Link to = "/">Inicio</Link>
+            <Link to = "/about">Quienes Somos?</Link>
+            <Link to = "/products">Nuestros Productos</Link>
+            <Link to = "/contact">Contactanos</Link>
         </nav>
     </div>
     )
 }
-export default NavBar
+export default NavBar;

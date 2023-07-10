@@ -1,11 +1,11 @@
 
 import './App.css';
-
-
 import styles from './App.css';
 import Home from "./components/Home/Home";
-import Start from "./components/Start/StartComponent"
-import NavBar from "./components/NavBar/NavBar"
+import NavBar from "./components/NavBar/NavBar";
+import About from './components/About/AboutUs';
+import Contact from "./components/Contact/Contact";
+import Products from "./components/Products/Products";
 import { Provider } from "react-redux";
 import generateStore from "./store";
 import { Route, Routes } from 'react-router-dom';
@@ -17,7 +17,9 @@ function App() {
      <NavBar/>
     <Routes>
       <Route path = '/' element={<Home/>}/>
-      <Route path = '/start' element={<Start/>}/>
+      <Route path = '/about' element={<About/>}/>
+      <Route path = '/contact' element={<Contact/>}/>
+      <Route path = '/products' element={<Products/>}/>
     </Routes>
     </Provider>
   );
