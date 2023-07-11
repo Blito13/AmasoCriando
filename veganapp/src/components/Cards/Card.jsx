@@ -21,7 +21,7 @@ const cartas = [
     imgn :"",
     langa :12
     },
-]
+];
 const Card = ()=>{
     return(
         <div className = {style.container}>
