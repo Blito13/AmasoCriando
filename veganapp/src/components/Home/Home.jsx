@@ -10,27 +10,46 @@ import cartas from "../../utils/utils.js";
 
 const Home = () => {
     const [current , setCurrent] = useState(0);
-    const [animated , setAnimated] =  useState(0);
+    const [animated , setAnimated] =  useState(false);
     const handleNext =() =>{
-        
+    setAnimated(`${styles.animateNext}`);
+    setTimeout(() => {
+        console.log("Delayed for 1 second.");
+      }, "1000");
     };
     const handlePrev =() =>{
-        
+    setAnimated(`${styles.animatePrev}`);
+    setTimeout(() => {
+        console.log("Delayed for 1 second.");
+      }, "1000");
     };
     return (
-        <div>
-             <About></About>
-    <section  >
-       
+   
         <div className={styles.container}>
+             <About></About>
+
+       
             <h2>Algunos de Nuestros Productos</h2>
+            <button  className={styles.buttons} onClick={handlePrev}>
+                prev
+            </button>
+           <div className={styles.cardContainer}>
+            <div className={`${styles.movement} ${animated}`}>
             {
-            cartas.map(e => 
-                <div className={styles.card}>
-                <h3>{e.texto}</h3>
-               <img  className={styles.imagens}src={e.imgn} alt="pics" />
-            </div> )
-            }
+                cartas.map(e => 
+               <div className={styles.card}>
+            
+            
+           <img  className={styles.imagens /* condional */}src={e.imgn} alt="pics" />
+            </div> 
+            
+               )
+            };
+            </div>
+            </div> 
+            <button className={styles.buttons} onClick={handleNext}>
+                next
+            </button>
            {/*  <h3>Brownies</h3>
             <div className={styles.card}>
                 <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam incidunt dignissimos velit aspernatur asperiores distinctio. Necessitatibus porro, cum nam earum explicabo excepturi vero facilis quibusdam repellat, dolorum reprehenderit odio quisquam.</p>
@@ -42,9 +61,9 @@ const Home = () => {
         
         </div>
 
-    </section>
-    {/* Aca se debe renderizar el componente Contact */}
-        </div>
+    
+
+        
     )
 }
 export default Home;
