@@ -42,8 +42,8 @@
     /* overflow: hidden; */
 }
 .movement{
-    position: relative;
-    width: 900px;
+    position: absolute;
+    width: 1600px;
     display: flex;
     flex-direction: row;
     height: 200px;
@@ -51,15 +51,15 @@
     
 };
 .buttons {
-  /*   position: relative; */
+
     width: 34px;
     height: 15;
 }
 .card{
     display:inline-flex;
     flex-direction: row;
-    position:absolute;
-    width:200%;
+    position:relative;
+    width:400px;
     height: 100%;
     border: 1px solid #4e1dff;
     border-radius: 2em;
@@ -81,10 +81,10 @@
       }
       @keyframes next {
         0% {
-          left: 50%;
+          left: 0%;
         }
         100% {
-          left: 0%
+          left: -100%
         }
       }
       @keyframes prev {

@@ -34,18 +34,15 @@ const Home = () => {
                 prev
             </button>
            <div className={styles.cardContainer}>
-            <div className={`${styles.movement} ${animated}`}>
+            <div className={`${styles.movement} ${animated.length > 0 ?animated : styles.movement}`}>
             {
-                cartas.map(e => 
+            cartas.map(e => 
                <div className={styles.card}>
-            
-            
-           <img  className={styles.imagens /* condional */}src={e.imgn} alt="pics" />
-            </div> 
-            
+                 <img  className={styles.imagens /* condional */}src={e.imgn} alt="pics" />
+                </div> 
                )
             };
-            </div>
+             </div>
             </div> 
             <button className={styles.buttons} onClick={handleNext}>
                 next
