@@ -11,12 +11,13 @@ import cartas from "../../utils/utils.js";
 const Home = () => {
     const [current , setCurrent] = useState(0);
     const [animated , setAnimated] =  useState(false);
+    const [next , setNext]  = useState( { transform: "translateX(0%)"})
     const handleNext =() =>{
-    setAnimated(`${styles.animateNext}`);
-    setTimeout(() => {
-        console.log("Delayed for 1 second.");
-      }, "1000");
+        //hacer css inline con el porcentaje de movimiento
+    setNext(  { transform: "translate(-25%)" });
+    
     };
+    
     const handlePrev =() =>{
     setAnimated(`${styles.animatePrev}`);
     setTimeout(() => {
@@ -34,10 +35,10 @@ const Home = () => {
                 prev
             </button>
            <div className={styles.cardContainer}>
-            <div className={`${styles.movement} ${animated.length > 0 ?animated : styles.movement}`}>
+            <div className={styles.movement} style={next}>
             {
             cartas.map(e => 
-               <div className={styles.card}>
+               <div key = {e.texto}className={styles.card}>
                  <img  className={styles.imagens /* condional */}src={e.imgn} alt="pics" />
                 </div> 
                )

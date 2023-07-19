@@ -48,7 +48,7 @@
     flex-direction: row;
     height: 200px;
     border : solid 4px red;
-    
+    scroll-behavior: smooth
 };
 .buttons {
 
@@ -74,18 +74,19 @@
     )
      }
      .animateNext {
-        animation: next 1s linear ;
+        animation: next 1s linear  ;
+        
+        animation-fill-mode: forwards;
+     
       }
       .animatePrev {
         animation: prev 1s linear ;
       }
       @keyframes next {
-        0% {
-          left: 0%;
-        }
         100% {
-          left: -100%
-        }
+          transform: translateX(-50%)}
+       
+      
       }
       @keyframes prev {
         0% {
