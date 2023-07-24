@@ -34,7 +34,7 @@ const Home = () => {
                 prev
             </button>
            <div className={styles.cardContainer}>
-            <div className={`${styles.movement} ${animated}`}>
+            <div className={/* `${styles.movement} ${animated}` */ styles.movement}>
             {
                 cartas.map(e => 
                <div className={styles.card}>
