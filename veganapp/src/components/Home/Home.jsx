@@ -11,38 +11,21 @@ import cartas from "../../utils/utils.js";
 const Home = () => {
     const [current , setCurrent] = useState(0);
     const [animated , setAnimated] =  useState({ transition:'2s'});
-    const [varitono , setVaritono] = useState("-100%")  
-    /* const [next , setNext]  = useState( { transform: "translateX(0%)"}) */
- 
+    const [variation , setVariation] = useState("-100%");  
+   
     const handleNext =() =>{
         setAnimated({
-            marginLeft : `${varitono}`,
+            marginLeft : `${variation}`,
             transition:'2s'
         });
-        console.log(varitono-100);
+        console.log(variation);
         setTimeout(() => {
-           /*  setAnimated({
-                marginLeft:"-200%"
-            }) */
-            setVaritono("-200%")
+            if(variation === "-300%" ){
+                setVariation("0%")
+            }else {
+                setVariation(`${parseInt(variation)-100}%`);
+            }
         }, 2000);
-        
-        //hacer css inline con el porcentaje de movimiento
-    /* setNext(  { transform: "translate(-25%)" }); */
-    /* let one= "translateX(-25%)";
-    let two = "translateX(-50%)";
-    let three = "translateX(-75%)";
-       
-    console.log(animated.transform)
-    if(animated.transform === "translateX(-25%)"){
-        setAnimated( { transform: `${two}`});
-    }
-    if(animated.transform === "translateX(-50%)"){
-        setAnimated( { transform: `${three}`});
-    }
-    if (animated === false ){
-        setAnimated( { transform: `${one}`});
-    } */
    
     };
     
