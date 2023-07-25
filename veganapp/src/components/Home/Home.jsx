@@ -10,12 +10,40 @@ import cartas from "../../utils/utils.js";
 
 const Home = () => {
     const [current , setCurrent] = useState(0);
-    const [animated , setAnimated] =  useState(false);
-    const [next , setNext]  = useState( { transform: "translateX(0%)"})
+    const [animated , setAnimated] =  useState({ transition:'2s'});
+    const [varitono , setVaritono] = useState("-100%")  
+    /* const [next , setNext]  = useState( { transform: "translateX(0%)"}) */
+ 
     const handleNext =() =>{
+        setAnimated({
+            marginLeft : `${varitono}`,
+            transition:'2s'
+        });
+        console.log(varitono-100);
+        setTimeout(() => {
+           /*  setAnimated({
+                marginLeft:"-200%"
+            }) */
+            setVaritono("-200%")
+        }, 2000);
+        
         //hacer css inline con el porcentaje de movimiento
-    setNext(  { transform: "translate(-25%)" });
-    
+    /* setNext(  { transform: "translate(-25%)" }); */
+    /* let one= "translateX(-25%)";
+    let two = "translateX(-50%)";
+    let three = "translateX(-75%)";
+       
+    console.log(animated.transform)
+    if(animated.transform === "translateX(-25%)"){
+        setAnimated( { transform: `${two}`});
+    }
+    if(animated.transform === "translateX(-50%)"){
+        setAnimated( { transform: `${three}`});
+    }
+    if (animated === false ){
+        setAnimated( { transform: `${one}`});
+    } */
+   
     };
     
     const handlePrev =() =>{
@@ -35,7 +63,7 @@ const Home = () => {
                 prev
             </button>
            <div className={styles.cardContainer}>
-            <div className={styles.movement} style={next}>
+            <div className={styles.movement } style = {animated}>
             {
             cartas.map(e => 
                <div key = {e.texto}className={styles.card}>

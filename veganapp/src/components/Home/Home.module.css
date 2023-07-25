@@ -68,11 +68,17 @@
    /*  background-size:cover; */
     box-shadow:1px 1px 2px #333;
    /*  background-repeat: no-repeat; */
+   /* transition: margin-left 2s, color 2s; */
     background-image: linear-gradient(
         rgba(0,0,0,0.2),
         rgba(0,0,0,0.2) 
     )
      }
+     .moveNxt{
+        transition: margin-left 2s, color 2s;
+        margin-left: -100%;
+    }
+    
      .animateNext {
         animation: next 1s linear  ;
         
@@ -83,7 +89,7 @@
         animation: prev 1s linear ;
       }
       @keyframes next {
-        100% {
+        0% {
           transform: translateX(-50%)}
        
       
