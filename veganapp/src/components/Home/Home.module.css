@@ -31,10 +31,10 @@
 
      width: 400px;
      height: 250px;
- 
+     position: relative;
     flex-direction: row;
     border : solid rgba(59, 163, 17, 0.562) 3px;
-   
+    overflow: hidden;
 }
 .movement{
     position: absolute;
@@ -43,6 +43,7 @@
     flex-direction: row;
     height: 200px;
     border : solid 4px red;
+    scroll-behavior: smooth;
     
 };
 .buttons {
@@ -58,59 +59,12 @@
     height: 100%;
     border: 1px solid #4e1dff;
     border-radius: 2em;
- /*    margin: 1em 0; */
- /*    background-position: center center; */
-   /*  background-size:cover; */
+ 
     box-shadow:1px 1px 2px #333;
-   /*  background-repeat: no-repeat; */
+  
     background-image: linear-gradient(
         rgba(0,0,0,0.2),
         rgba(0,0,0,0.2) 
     )
      }
-.moveNext {
-  margin-left:  calc((100% / 4) - 25%);
-}
-     .animateNext {
-        animation: next 1s linear ;
-      }
-      .animatePrev {
-        animation: prev 1s linear ;
-      }
-      @keyframes next {
-        0% {
-          left: 100%;
-        }
-        100% {
-          left: -25%
-        }
-      }
-      @keyframes prev {
-        0% {
-          right: 50%;
-        }
-        100% {
-          right: 0%
-        }
-      }
-/* .uno{
-    background-image: linear-gradient(
-        rgba(0,0,0,0.2),
-        rgba(0,0,0,0.2) 
-    ),url(../../media/baggles.jpg);
-}
-.dos{
-    background-image: linear-gradient(
-        rgba(0,0,0,0.2),
-        rgba(0,0,0,0.2) 
-    ),url(../../media/brownie.jpg);
-}
-.tres{
-    background-image: linear-gradient(
-        rgba(0,0,0,0.2),
-        rgba(0,0,0,0.2) 
-    ),url(../../media/baggles.jpg);
-} */
-.productos h3{
-    text-align: center;
-}
+     

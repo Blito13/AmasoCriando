@@ -10,13 +10,25 @@ import cartas from "../../utils/utils.js";
 
 const Home = () => {
     const [current , setCurrent] = useState(0);
-    const [animated , setAnimated] =  useState(false);
+    const [animated , setAnimated] =  useState({ transition:'2s'});
+    const [variation , setVariation] = useState("-100%");  
+   
     const handleNext =() =>{
-    setAnimated(`${styles.moveNext}`);
-    setTimeout(() => {
-        console.log("Delayed for 1 second.");
-      }, "1000");
+        setAnimated({
+            marginLeft : `${variation}`,
+            transition:'2s'
+        });
+        console.log(variation);
+        setTimeout(() => {
+            if(variation === "-300%" ){
+                setVariation("0%")
+            }else {
+                setVariation(`${parseInt(variation)-100}%`);
+            }
+        }, 2000);
+   
     };
+    
     const handlePrev =() =>{
     setAnimated(`${styles.animatePrev}`);
     setTimeout(() => {
@@ -34,11 +46,11 @@ const Home = () => {
                 prev
             </button>
            <div className={styles.cardContainer}>
-            <div className={`${styles.movement} ${animated.length > 0 ?animated :""}`}>
+            <div className={styles.movement } style = {animated}>
             {
             cartas.map(e => 
-               <div key ={e.texto}className={styles.card}>
-                 <img  className={styles.imagens }src={e.imgn} alt="pics" />
+               <div key = {e.texto}className={styles.card}>
+                 <img  className={styles.imagens /* condional */}src={e.imgn} alt="pics" />
                 </div> 
                )
             };
