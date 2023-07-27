@@ -50,7 +50,7 @@ const Home = () => {
 
        
             <h2>Algunos de Nuestros Productos</h2>
-            <button  className={styles.buttons} onClick={e =>{handlePrev(e)}}>
+            <button  className={styles.buttons} onClick={e=>{handlePrev(e)}}>
                 prev
             </button>
            <div className={styles.cardContainer}>
@@ -74,5 +74,5 @@ const Home = () => {
 
         
     )
-}
+};
 export default Home;
