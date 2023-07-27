@@ -10,30 +10,38 @@ import cartas from "../../utils/utils.js";
 
 const Home = () => {
     const [current , setCurrent] = useState(0);
-    const [animated , setAnimated] =  useState({ transition:'2s'});
-    const [variation , setVariation] = useState("-100%");  
+    const [animated , setAnimated] =  useState({ transition:'2s', marginLeft : "0%"});
+    const [variation , setVariation] = useState("0%");  
+    
+    
    
-    const handleNext =() =>{
-        setAnimated({
-            marginLeft : `${variation}`,
-            transition:'2s'
-        });
-        console.log(variation);
-        setTimeout(() => {
-            if(variation === "-300%" ){
-                setVariation("0%")
-            }else {
-                setVariation(`${parseInt(variation)-100}%`);
-            }
-        }, 2000);
-   
+    const handleNext =(e) =>{
+        e.preventDefault();
+        if(variation === "-300%"){
+           return
+        }else{
+            setAnimated({
+                marginLeft : `${parseInt(variation)-100}%`,
+                transition:'2s'
+            });
+       setVariation(`${parseInt(variation)-100}%`)
+       console.log(animated , "NEXTT")
+        }
     };
     
-    const handlePrev =() =>{
-    setAnimated(`${styles.animatePrev}`);
-    setTimeout(() => {
-        console.log("Delayed for 1 second.");
-      }, "1000");
+    const handlePrev =(e) =>{
+        e.preventDefault();
+        if(variation === "0%"){
+            return
+         }else{
+             setAnimated({
+                 marginLeft : `${parseInt(variation)+100}%`,
+                 transition:'2s'
+             });
+             setVariation(`${parseInt(variation)+100}%`)
+            console.log(animated, "PPRREV")
+         }
+        
     };
     return (
    
@@ -42,31 +50,23 @@ const Home = () => {
 
        
             <h2>Algunos de Nuestros Productos</h2>
-            <button  className={styles.buttons} onClick={handlePrev}>
+            <button  className={styles.buttons} onClick={e =>{handlePrev(e)}}>
                 prev
             </button>
            <div className={styles.cardContainer}>
-            <div className={styles.movement } style = {animated}>
+            <div className={styles.movement } style = {animated? animated : null}>
             {
             cartas.map(e => 
                <div key = {e.texto}className={styles.card}>
-                 <img  className={styles.imagens /* condional */}src={e.imgn} alt="pics" />
+                 <img  className={styles.imagens}src={e.imgn} alt="pics" />
                 </div> 
                )
             };
              </div>
             </div> 
-            <button className={styles.buttons} onClick={handleNext}>
+            <button className={styles.buttons} onClick={e=> {handleNext(e)}}>
                 next
             </button>
-           {/*  <h3>Brownies</h3>
-            <div className={styles.card}>
-                <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam incidunt dignissimos velit aspernatur asperiores distinctio. Necessitatibus porro, cum nam earum explicabo excepturi vero facilis quibusdam repellat, dolorum reprehenderit odio quisquam.</p>
-            </div>
-            <h3>Baggles</h3>
-            <div className={styles.card}>
-                <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sapiente aperiam esse, deserunt blanditiis similique temporibus nulla rem ab at nisi quisquam distinctio iusto id ea animi enim consequuntur recusandae!</p>
-            </div> */}
         
         </div>
 
