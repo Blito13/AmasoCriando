@@ -1,4 +1,3 @@
-
 import './App.css';
 import styles from './App.css';
 import Home from "./components/Home/Home";
@@ -12,14 +11,14 @@ import { Route, Routes } from 'react-router-dom';
 
 function App() {
   const store = generateStore();
+  const fun = () => {
+   console.log("kasmir")
+  };
   return (
     <Provider store={store}>
-     <NavBar/>
+     <NavBar fun={fun}/>
     <Routes>
       <Route path = '/' element={<Home/>}/>
-      <Route path = '/about' element={<About/>}/>
-     {/*  <Route path = '/contact' element={<Contact/>}/> */}
-      {/* <Route path = '/products' element={<Products/>}/> */}
     </Routes>
     </Provider>
   );

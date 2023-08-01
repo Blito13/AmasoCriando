@@ -62,6 +62,7 @@ nav a:first-child{
 @media screen and (min-width:720px), (min-heigth:500px){
 
  .container{
+    z-index: 1;
     position: fixed;
     width: 100%;
         display: flex;
