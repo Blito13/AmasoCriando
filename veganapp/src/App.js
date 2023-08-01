@@ -5,22 +5,23 @@ import Home from "./components/Home/Home";
 import NavBar from "./components/NavBar/NavBar";
 import About from './components/About/AboutUs';
 import Contact from "./components/Contact/Contact";
-/* import Products from "./components/Products/Products"; */
+import { useRef } from 'react';
 import { Provider } from "react-redux";
 import generateStore from "./store";
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes  , HashRouter} from 'react-router-dom';
+import Carousel from './components/Carousel/Carousel';
 
 function App() {
   const store = generateStore();
+  const aboutRef =  useRef(null);
   return (
     <Provider store={store}>
-     <NavBar/>
-    <Routes>
-      <Route path = '/' element={<Home/>}/>
-      <Route path = '/about' element={<About/>}/>
-     {/*  <Route path = '/contact' element={<Contact/>}/> */}
-      {/* <Route path = '/products' element={<Products/>}/> */}
-    </Routes>
+    <NavBar props = {aboutRef}/>
+    <About ref ={aboutRef}/>
+    <Contact/>
+   <Carousel/>
+    
+  
     </Provider>
   );
 }
