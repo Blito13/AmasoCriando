@@ -4,16 +4,14 @@ import About from "../About/AboutUs";
 import Contact from "../Contact/Contact";
 import { useEffect  , useState , useRef} from "react";
 import Carousel from "../Carousel/Carousel";
+import NavBar from "../NavBar/NavBar";
 
 
 const Home = () => {
-
-    return (
    
+    return (
         <div className={styles.container}>
-            <About/>
-            <Carousel/>
-            <Contact/>
+            <h1>P.I.V</h1>
         </div> 
     )
 };
