@@ -1,24 +1,23 @@
-import styles from "./Prooducts.module.css";
-
-const products = [{
-    name : "Pan Integral"
-},
-{
-    name : "Budin"
-},
-{
-    name : "Torta"
-},
-{
-    name : "Brownies"
-},
-]
+import styles from "./Products.module.css";
+import productos from "../../utils/utils";
+import { Link  , Outlet} from "react-router-dom";
 const Products = () =>{
-    return (
-        <div className={styles.container}>
-
-           
-        </div>
-    )
+console.log(productos);
+return (
+    <div className={styles.container}>
+        <h1>Our Products</h1>
+      {
+        productos.map( elem => 
+            <ul key={elem.texto}>
+                <li key={elem.texto}>
+                <Link key={elem.texto} to = {`detail/${elem.texto}`}>{elem.texto}</Link>
+                </li>
+            </ul>
+        
+        )
+      }
+      <Outlet/>
+    </div>
+)
 };
-export default  Products;
+export default Products;

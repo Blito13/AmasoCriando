@@ -1,7 +1,10 @@
 .container{
-    display: flex;
-    flex-direction: row;
-    height: 12vh;
-    width: 12vh;
-    background-color: #e14414;
+    display :flex;
+    flex-direction: column;
+    background-color: #c53333;
+    width:100%;
+   /*  height:100vh;     */     
+}
+.container li {
+    background: #000;
 }

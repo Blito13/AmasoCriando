@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Carousel.module.css";
 import { useEffect  , useState} from "react";
-import cartas from "../../utils/utils.js";
+import productos from "../../utils/utils.js";
 
 const Carousel = ()=>{
     const [animated , setAnimated] =  useState({ transition:'2s', marginLeft : "0%"});
@@ -44,7 +44,7 @@ const Carousel = ()=>{
            <div className={styles.cardContainer}>
             <div className={styles.movement } style = {animated? animated : null}>
             {
-            cartas.map(e => 
+            productos.map(e => 
                <div key = {e.texto}className={styles.card}>
                  <img  className={styles.imagens}src={e.imgn} alt="pics" />
                 </div> 
