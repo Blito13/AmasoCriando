@@ -1,14 +1,13 @@
+import React from "react";
+import styles from "./Carousel.module.css";
 import { useEffect  , useState} from "react";
 import cartas from "../../utils/utils.js";
-import styles from "./Carousel.module.css"
 
-
-
-
-const Carousel = () => {
+const Carousel = ()=>{
     const [animated , setAnimated] =  useState({ transition:'2s', marginLeft : "0%"});
     const [variation , setVariation] = useState("0%");  
-      const handleNext =(e) =>{
+
+    const handleNext =(e) =>{
         e.preventDefault();
         if(variation === "-300%"){
            return
@@ -36,31 +35,27 @@ const Carousel = () => {
          }
         
     };
-    return (
-        <div className={styles.container}>
-       <h2>Algunos de Nuestros Productos</h2>
-       <button  className={styles.buttons} onClick={e=>{handlePrev(e)}}>
-           prev
-       </button>
-      <div className={styles.cardContainer}>
-       <div className={styles.movement } style = {animated? animated : null}>
-       {
-       cartas.map(e => 
-          <div key = {e.texto}className={styles.card}>
-            <img  className={styles.imagens}src={e.imgn} alt="pics" />
-           </div> 
-          )
-       };
+    return(
+        <div className = {styles.container}>
+         
+         <button  className={styles.buttons} onClick={e=>{handlePrev(e)}}>
+                prev
+            </button>
+           <div className={styles.cardContainer}>
+            <div className={styles.movement } style = {animated? animated : null}>
+            {
+            cartas.map(e => 
+               <div key = {e.texto}className={styles.card}>
+                 <img  className={styles.imagens}src={e.imgn} alt="pics" />
+                </div> 
+               )
+            };
+             </div>
+            </div> 
+            <button className={styles.buttons} onClick={e=> {handleNext(e)}}>
+                next
+            </button>
         </div>
-       </div> 
-       <button className={styles.buttons} onClick={e=> {handleNext(e)}}>
-           next
-       </button>
-   
-   </div>
-
-
-
-    );
-};
+    )
+}
 export default Carousel;

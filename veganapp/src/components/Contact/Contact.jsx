@@ -1,11 +1,12 @@
-import styles from "../Contact/Contact.module.css";
+import React from "react";
+import styles from "./Contact.module.css";
 
+const Contact = () => {
+    return (
+        <div className={styles.container}>
+            im contact
+        </div>
+    )
 
-const Contact =  () => {
-return (
-    <div className= {styles.container}>
-        Hola soy contact
-    </div>
-)
 };
-export default Contact; 
+export default Contact;
