@@ -45,7 +45,7 @@ const Carousel = ()=>{
             <div className={styles.movement } style = {animated? animated : null}>
             {
             productos.map(e => 
-               <div key = {e.texto}className={styles.card}>
+               <div key = {e.name}className={styles.card}>
                  <img  className={styles.imagens}src={e.imgn} alt="pics" />
                 </div> 
                )

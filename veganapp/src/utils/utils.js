@@ -1,3 +1,7 @@
+/*   */
+import * as AllImages from '../media/realMedia/indexMedia.js';
+
+
 const productos = [
     {
     texto : "Brownies",
@@ -20,4 +24,57 @@ const productos = [
     
     },
 ];
-export default productos;
+const mock = [
+    {
+    texto : "Alfajores integrales con coco rallado y relleno de chocolate bariloche",
+    imgn : AllImages.alfajoresChocolate,
+    id : 0,
+    name : "alfajoresChocolate",
+    },
+    {
+    texto : "Alfajores integrales con coco rallado y relleno de dulce de leche de coco",
+    imgn :AllImages.alfajoresCoco,
+    id : 1,
+    name : "alfajoresCoco",
+    },
+    {
+    texto : "Bizcochos integrales con mix de semillas",
+    imgn :AllImages.bizcochos,
+    id : 3,
+    name : "bizcochos",
+    },
+    {
+    texto : "Medialunas integrales rellenas de chocolate bariloche",
+    imgn :AllImages.medialunasChocolate,
+    id : 4,
+    name :"medialunasChocolate" ,
+    },
+    {
+    texto : "Medialunas integrales rellenas de dulce de leche de coco",
+    imgn :AllImages.medialunasCoco,
+    id : 5,
+    name : "medialunasCoco",
+    },
+    {
+    texto : "Pan integral de centeno y mix de semillas",
+    imgn :AllImages.panCenteno,
+    id : 6,
+    name : "panCenteno",
+    },
+    {
+    texto : "pan integral de semillas",
+    imgn :AllImages.panIntegralSemillas,
+    id : 7,
+    name : "panIntegralSemillas",
+    },
+    {
+    texto : "budines integrales (banana , zanahoria , chocolate , remolacha)",
+    imgn :AllImages.budinChocolate,
+    id : 8,
+    name : "budinChocolate",
+    },
+];
+export  {
+    mock,
+    productos
+};
