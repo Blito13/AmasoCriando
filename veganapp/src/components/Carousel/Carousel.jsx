@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Carousel.module.css";
 import { useEffect  , useState} from "react";
-import productos from "../../utils/utils.js";
+import {mock ,productos} from "../../utils/utils";
 
 const Carousel = ()=>{
     const [animated , setAnimated] =  useState({ transition:'2s', marginLeft : "0%"});
