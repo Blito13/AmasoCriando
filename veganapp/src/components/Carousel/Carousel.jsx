@@ -36,7 +36,7 @@ const Carousel = ()=>{
         
     };
     return(
-        <div className = {styles.container}>
+        <div id="contact" className = {styles.container}>
          
          <button  className={styles.buttons} onClick={e=>{handlePrev(e)}}>
                 prev
@@ -45,8 +45,8 @@ const Carousel = ()=>{
             <div className={styles.movement } style = {animated? animated : null}>
             {
             productos.map(e => 
-               <div key = {e.name}className={styles.card}>
-                 <img  className={styles.imagens}src={e.imgn} alt="pics" />
+               <div key = {e.texto}className={styles.card}>
+                 <img key = {e} className={styles.imagens}src={e.imgn} alt="pics" />
                 </div> 
                )
             };

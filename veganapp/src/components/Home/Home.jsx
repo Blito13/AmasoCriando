@@ -11,7 +11,11 @@ const Home = () => {
    console.log(AllImages);
     return (
         <div className={styles.container}>
-            <h1>P.I.V</h1>
+            
+            <About/>
+        
+            <Carousel></Carousel>
+            
         </div> 
     )
 };

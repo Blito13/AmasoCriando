@@ -6,6 +6,18 @@ const NavBar = () => {
 
     return(
         <div className={styles.container}>
+        <p className={styles.logo}>Amaso Criando<br></br>Pasteleria Integral Vegana</p>
+        <nav className={styles.nav}>
+            
+              <Link to = "/">
+                Inicio
+              </Link>
+            
+            <a href="#hero">Quienes Somos?</a>
+            <a href="#prod">Nuestros Productos</a>
+            <a href="#contact">Contactanos</a>
+        </nav>
+        {/* <div className={styles.container}>
         <p className={styles.logo}>AmasoCriando</p>
         <nav className={styles.nav}>
             <Link to = "/">Home</Link>
@@ -13,6 +25,7 @@ const NavBar = () => {
             <Link to = "/contact">Contact</Link>
             <Link to = "/products">Our Products</Link>
         </nav>
+    </div> */}
     </div>
     )
 }   

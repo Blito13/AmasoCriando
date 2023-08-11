@@ -82,7 +82,7 @@ nav a:first-child{
     padding: 0.5em 0;
 }
 
-.card-flex{
+/* .card-flex{
 display: flex;
 flex-direction: column;
 padding: 1em;
@@ -135,7 +135,7 @@ padding: 1em;
 }
 .productos h3{
     text-align: center;
-}
+} */
 
 .form{
     display: flex;
