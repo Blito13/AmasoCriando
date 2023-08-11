@@ -11,10 +11,15 @@ const Home = () => {
    console.log(AllImages);
     return (
         <div className={styles.container}>
-            
+            <section>
             <About/>
-        
+            </section>
+            <section>
             <Carousel></Carousel>
+            </section>
+            <section>
+            <Contact></Contact>
+            </section>
             
         </div> 
     )

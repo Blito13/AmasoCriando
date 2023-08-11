@@ -1,25 +1,27 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import { useState } from "react";
-import emailjs from '@emailjs/browser'
+import { useState , useRef } from "react";
+import emailjs from '@emailjs/browser';
+const lang = "ES";
 const Key1 =  process.env.REACT_APP_KEY_1;
 const Key2 =  process.env.REACT_APP_KEY_2;
 const Key4 =  process.env.REACT_APP_KEY_3;
 const Contact = () => {
-/* const form = useRef(); */
+const message = useRef();
 const [confirm, setConfirm] = useState(null);
 const [sending, setSending] = useState(false);
 const [form , setForm ] =  useState({
     nombre: "",
     email : "",
     tel : 0,
-    form : "",
+    text : "", 
 });
+console.log(Key1 , Key2 , Key4);
 const handleChange = (e) => {
     e.preventDefault();
     const {name , value } = e.target;
     setForm({ ...form, [name]: value });
-   console.log(form)
+   console.log(form);
   };
   
   const handleSubmit = (e) => {
@@ -38,16 +40,17 @@ const handleChange = (e) => {
     }
     setConfirm("loading");
     setSending(true);
-    emailjs.sendForm(Key1, Key2 ,form.current, Key4)
+    /* emailjs.sendForm(Key1, Key2 ,message.current, Key4) */
+    console.log(Key1 , Key2 , Key4)
     .then((res)=> {
 
       console.log(res)
       setConfirm(true);
-      setMessage({
+      setForm({
         name: "",
         email: "",
-        form: "",
-        honeypot: "",
+        tel: 0,
+        text :"",
       });
     })
     .catch((err)=>{
@@ -57,9 +60,9 @@ const handleChange = (e) => {
    
   };
     return (
-        <div id="contact"className={styles.form}>
+        <div id="contact"className={styles.contact}>
         <div className={styles.formulario}>
-        <form ref={form} className={styles.formulario} onSubmit={handleSubmit}>
+        <form ref ={message} className={styles.form} onSubmit={handleSubmit}>
               <input
                 type="text"
                 maxLength="50"
@@ -122,10 +125,8 @@ const handleChange = (e) => {
                 </button>
               </div>
             </form>
-        <div className="info">
-            <h4>Tel: 351 000 000</h4>
-            <p>Email: info@amasocriando.com</p>
-            <p>Direccion: B Smata - Mza C L5</p>
+            <div className = {styles.footer}>
+            <h4>Tel: 351 000 000</h4><p>Email: info@amasocriando.com</p><p>Direccion: B Smata - Mza C L5</p>
         </div>
     </div>
     </div>
