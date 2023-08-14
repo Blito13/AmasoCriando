@@ -4,6 +4,7 @@ import About from "../About/AboutUs";
 import Contact from "../Contact/Contact";
 import { useEffect  , useState , useRef} from "react";
 import Carousel from "../Carousel/Carousel";
+import CarouselReply from "../CarouselReply/CarouselReply";
 import NavBar from "../NavBar/NavBar";
 import * as AllImages from '../../media/realMedia/indexMedia.js'
 
@@ -15,7 +16,7 @@ const Home = () => {
             <About/>
             </section>
             <section>
-            <Carousel></Carousel>
+            <CarouselReply></CarouselReply>
             </section>
             <section>
             <Contact></Contact>
