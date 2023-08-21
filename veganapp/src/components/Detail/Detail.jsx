@@ -11,13 +11,12 @@ return (
        <h1>
         {detailedProduct?.map(e => 
         <div>
-
         <h4>{e.texto}</h4>
         <img  className = {styles.imgn}src={e.imgn} alt="nowImg" />
         <h4>{e.name}</h4>
         </div>
         )}
-        </h1> 
+        </h1>   
     </div>
 )
 };

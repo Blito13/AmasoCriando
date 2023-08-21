@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+    display: flex;
+    width: 52vh;
+    height: 52vh;
+    background: #861e1e;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.details{
+ /*  margin-left: 200%; */
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(221, 190, 66, 0.4);
+  position: absolute;
+    width: 45vh;
+    height: 45vh;
+    /* background: #f0f0f0; */
+}
+.details  p {
+  max-width: 35vh;
+}
+.details h3 {
+color: black ;
+}
+/* p {
+  max-width: 35vh;
+}  */
+.imgCont{
+  
+  position: relative;
+  width: 45vh;
+  height: 45vh;
+
+}

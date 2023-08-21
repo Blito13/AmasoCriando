@@ -7,10 +7,28 @@
     align-items: center;
     justify-content: center;
 }
+
+/* .cards{
+    display: flex;
+    flex-direction: row;
+    background-color: #cb8665;
+} */
 .h2{
     text-align: center;
     padding: 1em 0;
 }
+    .cards {
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 50vh;
+        /* justify-content:space-evenly; */
+        flex-wrap: wrap;
+        /* margin-left: 1rem;
+        margin-right: 1rem; */
+        background-color: #cb8665;
+    }
 
 /* .text{
     display: none;
