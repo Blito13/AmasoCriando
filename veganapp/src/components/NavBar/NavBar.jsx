@@ -7,12 +7,14 @@ const NavBar = () => {
 
     return(
         <div className={styles.container}>
-        <img className={styles.logo} src={AllImages.logo}></img>
+            <div className={styles.logo}>
+            <img className={styles.img} src={AllImages.logo} alt="none"></img>
+            </div>
         <nav className={styles.nav}>
             <a to = "/">Inicio</a>
-            <a href="#hero">Quienes Somos?</a>
-            <a href="#prod">Nuestros Productos</a>
-            <a href="#contact">Contactanos</a>
+            <a href="#">Quienes Somos?</a>
+            <a href="#">Nuestros Productos</a>
+            <a href="#">Contactanos</a>
         </nav>
     </div>
     )

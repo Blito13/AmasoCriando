@@ -21,7 +21,7 @@ function App() {
       <Route exact path="detail/:id" element={<Detail/>}/>
       </Route>
     </Routes>
-    <Contact></Contact>
+    <Contact/>
     </Provider>
     )
   };

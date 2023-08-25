@@ -1,5 +1,7 @@
 .container {
   position: relative;
+  margin:1rem; 
+    border-radius: 2rem;
     display: flex;
     width: 52vh;
     height: 52vh;
@@ -10,6 +12,7 @@
 }
 .details{
  /*  margin-left: 200%; */
+ border-radius: 8rem;
   display: flex;
   flex-direction: column;
   background-color: rgba(221, 190, 66, 0.4);
@@ -20,15 +23,20 @@
 }
 .details  p {
   max-width: 35vh;
+  /* margin-left: 1rem; */
+  
 }
-.details h3 {
+.details h4 {
 color: black ;
+
+max-width: vh;
+margin-left: 3rem;
 }
 /* p {
   max-width: 35vh;
 }  */
 .imgCont{
-  
+  border-radius: 8rem;
   position: relative;
   width: 45vh;
   height: 45vh;
