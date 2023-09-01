@@ -1,9 +1,111 @@
-.carousel {
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    background-color:#f8f8f8;;
+    height:350px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .prueva{
+    width: 12px;
+    height: 12px;
+    background-color: #28bf1d;
+/*     cursor: -webkit-grab; */
+  }
+  .move{
+    position:absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 400px;
+    flex-direction:row ;
+    width: 400%;
+    height: 350px;
+    background-color: #c91414;
+    animation: marquee 25s linear  infinite running  ;
+    overflow: hidden;
+    /* object-fit: contain; */
+}
+.image{
+  position: relative;
+  display: flex;
+    object-fit:fill;
+    width: 100%;
+ /*   right: 15px;
+  left: 15px; */
+
+}
+/* animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+animation-fill-mode: none|forwards|backwards|both|initial|inherit; */
+/*   .varia{
+    animation: marquee 7s linear   infinite initial  paused;
+  } */
+
+  .movement{
+    position: relative;
+     width: 25px; 
+     height: 28px; 
+ 
+   }
+.container:hover .move {
+    animation: marquee 25s linear   infinite  paused;
+}
+   @keyframes marquee {
+    0% {
+      left:0%;
+    }
+    15%{
+        left: 0%;
+    }
+    30%{
+        left : -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    60% {
+         left: -200%
+    }
+    75%{
+        left : -200%;
+    }
+    90% {
+        left: -300%;
+    }
+    100%{
+        left: -300%;
+    }
+  }
+   /* some slide */
+
+   /* Slider */
+   
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
     overflow: hidden;
     position : relative;
     border : 2px solid red;
