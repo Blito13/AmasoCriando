@@ -1,17 +1,41 @@
-import React from "react";
-import styles from "./Carousel.module.css";
-import { useEffect  , useState} from "react";
-import {mock ,productos} from "../../utils/utils";
+import React, { useState } from "react";
+import styles from "./Carousel.module.css"
+import { productos } from "../../utils/utils";
 
-const Carousel = ()=>{
+function Carousel () {
+const images = productos;
+const [currentimage , setCurrentImage] = useState(0);
+const [animationDirection , setAnimationDirection] = useState(false);
+const [opac , setOpac] = useState("");
+const nextImage = (e) => {
+  e.preventDefault();
+  setCurrentImage((currentimage + 1) % images.length);
+  setAnimationDirection(`${styles.animate}`);
+  setTimeout(()=>{
+    setAnimationDirection(false);
+  },1000);
+};
 
-    return(
-        
-           <div className={styles.container}>
-            <span className={styles.prueva}></span>
-             <span className={styles.move}></span>
-             <span className={styles.movement }></span>
-        </div>
-    )
+const prevImage = () =>{ 
+  setCurrentImage((currentimage-1+images.length) % images.length);
+  setAnimationDirection(`${styles.animatedBack}`);
+  setTimeout(()=>{
+    setAnimationDirection(false);
+  },1000);
+}; 
+
+return (
+<div className={styles.carousel}>
+  <button className={styles.prevButton} onClick={e=>prevImage(e)}>
+    Prev
+  </button>
+  <div className={styles.imgCont}>
+  <img className = {`${styles.carouselImage} ${animationDirection}`} style={{opac}} src = {images[currentimage]["imgn"]} alt="carusel"/>
+  </div>
+  <button className={styles.nextButton} onClick={nextImage}>
+    Next
+  </button>
+</div>
+)
 }
 export default Carousel;
