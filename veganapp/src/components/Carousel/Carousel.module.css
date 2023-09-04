@@ -18,13 +18,21 @@
   .move{
     position:absolute;
     display: flex;
-    flex-direction:row ;
+    flex-direction:column;
     width: 400%;
     height: 350px;
-    background-color: #c91414;
-    animation: marquee 25s linear  infinite running  ;
+    background-color: #5d3256;
+    
     overflow: hidden;
     /* object-fit: contain; */
+}
+.move , h1 , button{
+  /* font-family: 'MuseoModerno', cursive; */
+  font-family: 'Sofia', cursive;
+
+}
+.button{
+  font-family: 'MuseoModerno', cursive;
 }
 .image{
   position: relative;

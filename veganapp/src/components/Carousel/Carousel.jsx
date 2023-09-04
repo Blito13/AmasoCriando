@@ -6,11 +6,8 @@ const Carousel = ()=>{
     return(
            <div className={styles.container}>
              <span className={styles.move}>
-                {
-                    productos.map(e => 
-                        <img src={e.imgn} className={styles.image}></img>
-                        )
-                }
+               <h1>100% Vegan Bakery</h1>
+               <button className={styles.button}>Shop now</button>
              </span>
             </div>
     )
