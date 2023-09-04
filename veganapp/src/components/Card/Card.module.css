@@ -5,7 +5,7 @@
     display: flex;
     width: 52vh;
     height: 52vh;
-    background: #861e1e;
+    background:#f27979;;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -15,7 +15,7 @@
  border-radius: 8rem;
   display: flex;
   flex-direction: column;
-  background-color: rgba(221, 190, 66, 0.4);
+  background-color: rgba(148, 239, 134, 0.4);
   position: absolute;
     width: 45vh;
     height: 45vh;
