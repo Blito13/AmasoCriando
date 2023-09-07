@@ -7,7 +7,7 @@ const Carousel = ()=>{
 
     return(
            <div className={styles.container}>
-            <div className={styles.prueva}>
+            <div className={styles.content}>
              <div className={styles.static}>
                 <h1>100% vegan bakery</h1>
                 <p>
@@ -17,7 +17,7 @@ const Carousel = ()=>{
              </div>
              <div className={styles.move}>
              {productos.map( e => 
-              <img className={styles.image} /* style ={{transition :"2s" ,left: "1px"}}  */src={e.imgn} alt="" />
+              <img className={styles.image}src={e.imgn} alt="" />
              )}
              </div>
             </div>
