@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Contact.module.css";
+import styles from "./Footer.module.css";
 import { useState , useRef } from "react";
 import emailjs from '@emailjs/browser';
 import * as AllImages from '../../media/realMedia/indexMedia.js';
@@ -11,7 +11,7 @@ const lang = "ES";
 const Key1 =  process.env.REACT_APP_KEY_1;
 const Key2 =  process.env.REACT_APP_KEY_2;
 const Key4 =  process.env.REACT_APP_KEY_3;
-const Contact = () => {
+const Footer = () => {
   console.log(AllImages)
     return (
     <div className={styles.container}>
@@ -59,4 +59,4 @@ const Contact = () => {
   </div>
     )
 };
-export default Contact;
+export default Footer;

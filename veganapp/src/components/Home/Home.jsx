@@ -1,7 +1,7 @@
 import React ,{useState}from "react";
 import styles from "./Home.module.css"
 import About from "../About/AboutUs";
-import Contact from "../Contact/Contact";
+import Contact from "../Footer/Footer";
 import CarouselReply from "../CarouselReply/CarouselReply";
 import * as AllImages from '../../media/realMedia/indexMedia.js';
 import Card from "../Card/Card";
@@ -40,7 +40,7 @@ const handlePrev = () =>{
              {mock.slice(from,to).map(e =>
                 <Card 
                  imgn ={e.imgn}
-                 texto = {e.texto}
+                 texto ={e.texto}
                  id = {e.id}
                  name = {e.name}>
                 </Card>

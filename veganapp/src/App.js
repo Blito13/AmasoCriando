@@ -1,12 +1,11 @@
 import Home from "./components/Home/Home";
 import NavBar from "./components/NavBar/NavBar";
-import About from './components/About/AboutUs';
-import Contact from "./components/Contact/Contact";
 import Products from "./components/Products/Products";
 import Detail from "./components/Detail/Detail";
 import { Provider } from "react-redux";
 import generateStore from "./store";
 import { Route, Routes } from 'react-router-dom';
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
       <Route exact path="detail/:id" element={<Detail/>}/>
       </Route>
     </Routes>
-    <Contact/>
+    <Footer/>
     </Provider>
     )
   };
