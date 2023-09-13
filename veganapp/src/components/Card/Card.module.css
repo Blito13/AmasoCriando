@@ -11,7 +11,6 @@
     overflow: hidden;
 }
 .details{
- /*  margin-left: 200%; */
  border-radius: 8rem;
   display: flex;
   flex-direction: column;
@@ -19,25 +18,25 @@
   position: absolute;
     width: 45vh;
     height: 45vh;
-    /* background: #f0f0f0; */
 }
-.details  p {
-  max-width: 35vh;
-  /* margin-left: 1rem; */
-  
-}
-.details h4 {
-color: black ;
 
-max-width: vh;
-margin-left: 3rem;
-}
-/* p {
+.details h4{
+  font-family: 'Bebas Neue', sans-serif;
+  color :black;
   max-width: 35vh;
-}  */
+ margin-left: 70px;
+}
+.details p{
+margin-top: 10px;
+max-width: 25vh;
+font-size: 15px;
+font-family: 'Bebas Neue', sans-serif;
+color: black;
+}
+
+
 .imgCont{
   border-radius: 8rem;
-  /* position: relative; */
   width: 45vh;
   height: 45vh;
 
