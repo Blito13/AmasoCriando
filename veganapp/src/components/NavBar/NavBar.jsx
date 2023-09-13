@@ -11,10 +11,9 @@ const NavBar = () => {
             <img className={styles.img} src={AllImages.logo} alt="none"></img>
             </div>
         <nav className={styles.nav}>
-            <a to = "/">Inicio</a>
-            <a href="#">Quienes Somos?</a>
-            <a href="#">Nuestros Productos</a>
-            <a href="#">Contactanos</a>
+            <Link to = "/">Inicio</Link>
+            <Link to="/">Nuestros Productos</Link>
+            <Link to="/contact">Contactanos</Link>
         </nav>
     </div>
     )
