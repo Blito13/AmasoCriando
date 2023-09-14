@@ -6,7 +6,6 @@ import { Provider } from "react-redux";
 import generateStore from "./store";
 import { Route, Routes } from 'react-router-dom';
 import Footer from "./components/Footer/Footer";
-import Carousel from "./components/Carousel/Carousel";
 
 
 function App() {

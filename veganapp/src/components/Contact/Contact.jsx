@@ -22,14 +22,14 @@ const Contact = ()=>{
     const handleClickOpen = (e) => {
       e.preventDefault();
       setContacto(contacto === "closed" ? "open" : "open");
-      document.documentElement.style.overflow = "hidden";
+     /*  document.documentElement.style.overflow = "hidden"; */
      
     };
   
     const handleClickClose = (e) => {
       e.preventDefault();
       setContacto(contacto === "open" ? "closed" : "closed");
-      document.documentElement.style.overflow = "auto";
+     /*  document.documentElement.style.overflow = "auto"; */
   
       setConfirm(null);
     };

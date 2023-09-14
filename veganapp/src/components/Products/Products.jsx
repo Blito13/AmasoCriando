@@ -29,8 +29,8 @@ const handlePrev = () =>{
 };
 return (
     <div className={styles.container}>
-       <button onClick={handlePrev}>Prev</button>
-   { <div className = {styles.cards} style={opac? opac : null}>
+       <button className={styles.buttonPrev} onClick={handlePrev}></button>
+    <div className = {styles.cards} style={opac? opac : null}>
              {mock.slice(from,to).map(e =>
                 <Card 
                  imgn ={e.imgn}
@@ -39,8 +39,8 @@ return (
                  name = {e.name}>
                 </Card>
                 )}
-           </div>}
-           <button onClick={handleNext}>Next</button>
+           </div>
+           <button className={styles.buttonNext} onClick={handleNext}></button>
     </div>
 )
 };

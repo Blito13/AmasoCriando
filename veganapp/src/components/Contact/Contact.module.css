@@ -1,12 +1,7 @@
 .contact {
-  display :flex;
-  flex-direction: column;
-
-  width:100%;
-  height: 100%;
-  background-color: #e90b0b;
-  overflow: hidden;     
-   
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
   .h2Contact {
     font-size: 1.1em;
@@ -17,13 +12,14 @@
     background-color: rgb(178, 60, 16);
   }
   .containerContacto {
-    height:70%;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
+    
+    height:100%;
+    width: 80%;
+    background-color:#f27979;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+ 
   }
   .form {
     display: flex;

@@ -3,7 +3,7 @@
   }
   .subtitle {
     align-self: flex-end;
-    font-family: var(--subtitle);
+    font-family: 'Bebas Neue', sans-serif;
     color: var(--stroke);
     margin-right: 60px;
   }
@@ -14,17 +14,18 @@
     
   }
   .content {
-    font-family: var(--content);
+    font-family: 'Bebas Neue', sans-serif;
     color: var(--stroke);
     margin: auto;
   }
   
   .text {
-    margin: auto;
+    font-family: 'Bebas Neue', sans-serif;
     margin-left: 30px;
   }
   
   .text a {
+    font-family: 'Bebas Neue', sans-serif;
     color: var(--attention);
     font-size: 1em;
   }
@@ -33,7 +34,18 @@
     text-transform: uppercase;
     color: var(--stroke);
   }
-  
+  .text h4{
+    font-family: 'Bebas Neue', sans-serif;
+    color :black;
+    max-width: 25vh;
+   margin-left: 25px;
+  }
+  .text p{
+    font-family: 'Bebas Neue', sans-serif;
+    color :black;
+    margin-top: -60px;
+    margin-left: 25px;
+  }
   @media not print {
   @media (max-width: 550px) {
     .container {

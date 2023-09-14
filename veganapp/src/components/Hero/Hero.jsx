@@ -1,7 +1,7 @@
 import React, { useState  , useEffect} from "react";
-import styles from "./Carousel.module.css"
+import styles from "./Hero.module.css";
 import { productos } from "../../utils/utils";
-const Carousel = ()=>{
+const Hero = ()=>{
   const [animation , setAnimation] = useState("");
   const [index , setIndex] = useState("");
 console.log(productos.slice(2,4))
@@ -31,4 +31,4 @@ console.log(productos.slice(2,4))
             </div>
     )
 }
-export default Carousel;
+export default Hero;

@@ -1,7 +1,7 @@
 import React ,{useState}from "react";
 import styles from "./Home.module.css"
 import Card from "../Card/Card";
-import Carousel from "../Carousel/Carousel";
+import Hero from "../Hero/Hero";
 import { mock } from "../../utils/utils";
 import { Outlet} from 'react-router-dom';
 
@@ -32,7 +32,7 @@ const handlePrev = () =>{
     return (
         <div className={styles.container}>   
            <div className={styles.content}>
-            <Carousel></Carousel>
+            <Hero></Hero>
             <Outlet></Outlet>
            </div>
         </div> 
