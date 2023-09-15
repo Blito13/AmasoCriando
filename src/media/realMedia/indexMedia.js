@@ -12,3 +12,4 @@ export {default as facebook } from './facebook.png';
 export {default as instagram } from './instagram.png';
 export {default as whatsapp} from './whatsapp.png';
 export {default as twitter} from './twitter.png';
+export {default as logoSpan} from './logoSpan.jpeg'

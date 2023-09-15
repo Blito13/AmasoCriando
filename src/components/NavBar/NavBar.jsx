@@ -9,6 +9,7 @@ const NavBar = () => {
         <div className={styles.container}>
             <div className={styles.logo}>
             <img className={styles.img} src={AllImages.logo} alt="none"></img>
+            <img className={styles.span} src={AllImages.logoSpan} alt="none"></img>
             </div>
         <nav className={styles.nav}>
             <Link to = "/">Inicio</Link>

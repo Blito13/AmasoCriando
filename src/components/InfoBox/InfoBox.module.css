@@ -41,6 +41,8 @@
    margin-left: 25px;
   }
   .text p{
+    max-width: 25vh;
+    font-size: small;
     font-family: 'Bebas Neue', sans-serif;
     color :black;
     margin-top: -60px;

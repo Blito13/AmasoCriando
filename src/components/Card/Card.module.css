@@ -5,7 +5,7 @@
     display: flex;
     width: 52vh;
     height: 52vh;
-    background:#f27979;;
+    background:#f27979;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -19,23 +19,6 @@
     width: 45vh;
     height: 45vh;
 }
-
-.details h4{
-  font-family: 'Bebas Neue', sans-serif;
-  color :black;
-  max-width: 35vh;
- margin-left: 70px;
-}
-.details p{
-display: flex;
-margin-left: 70px;
-margin-top: 10px;
-max-width: 25vh;
-font-size: 15px;
-font-family: 'Bebas Neue', sans-serif;
-color: black;
-}
-
 
 .imgCont{
   border-radius: 8rem;
