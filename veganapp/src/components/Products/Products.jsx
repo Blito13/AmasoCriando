@@ -12,20 +12,20 @@ const handleNext = () =>{
   if(to >= 7) return;
   setOpac({transition : "2s" ,opacity: "0.0" });
     setTimeout(()=>{
-      setOpac({transition : "1s" ,opacity: "1" });
+      setOpac({transition : "4s" ,opacity: "1" });
       setFrom(to);
       setTo(to + 3);
-    }, 1000)
+    }, 1500)
 ;
 };
 const handlePrev = () =>{
     if (from === 0) return ;
     setOpac({transition : "2s" ,opacity: "0.0" });
     setTimeout(()=>{
-        setOpac({transition : "1s" ,opacity: "1" });
+        setOpac({transition : "4s" ,opacity: "1" });
     setFrom(from - 3);
     setTo(to - 3);
-    },1000);
+    },1500);
 };
 return (
     <div className={styles.container}>
