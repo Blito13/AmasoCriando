@@ -15,7 +15,7 @@ const productos = [
     },
     {
     texto : "Rolls de canela y manzana",
-    imgn :"https://recetas-rapidas.es/wp-content/uploads/2018/10/Rollos-de-canela-receta-724x477.jpg",
+    imgn :"https://www.collico.cl/wp-content/uploads/2021/06/Rollos-de-canela-receta-724x477-1.jpeg",
     
     },
     {
