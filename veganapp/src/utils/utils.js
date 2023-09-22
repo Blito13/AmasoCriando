@@ -38,7 +38,7 @@ const mock = [
     name : "<h4>Alfajor integral <br> con dulce de leche de coco<h4>",
     },
     {
-    texto : "<p>Ingredientes :<br> Harina integral organica ,<br> mix de semillas , sal y aceite de girasol<p>.",
+    texto : "<p>Ingredientes :<br> Harina integral organica ,<br> mix de semillas , sal y <br>aceite de girasol<p>.",
     imgn :AllImages.bizcochos,
     id : 3,
     name : "<h4>Bizcochos integrales <br> con mix de semillas<h4>",
@@ -68,10 +68,10 @@ const mock = [
     name : "<h4>Pan integral ,<br> con mix de semillas<h4>",
     },
     {
-    texto : "budines integrales (banana , zanahoria , chocolate , remolacha)",
+    texto : "<p>Chocolate y coco<br>Arandanos y limon <br>Banan y chips de chocolate <br>Manzana y canela<br> Limon  ,jengibre y coco <br>Zanahorias , naranjas y nueces<p>",
     imgn :AllImages.budinChocolate,
     id : 8,
-    name : "budinChocolate",
+    name : "<h4>Variedad en budines<h4>",
     },
 ];
 export  {

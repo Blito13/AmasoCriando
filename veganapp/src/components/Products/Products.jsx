@@ -33,8 +33,8 @@ return (
     <div className = {styles.cards} style={opac? opac : null}>
              {mock.slice(from,to).map(e =>
                 <Card 
-                 imgn ={e.imgn}
-                 texto ={e.texto}
+                 imgn = {e.imgn}
+                 texto = {e.texto}
                  id = {e.id}
                  name = {e.name}>
                 </Card>

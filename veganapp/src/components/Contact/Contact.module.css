@@ -15,6 +15,7 @@
     
     height:100%;
     width: 80%;
+    margin-top: 25px;
     background-color:#f27979;
     display: flex;
     flex-direction: column;
