@@ -15,7 +15,7 @@ const productos = [
     },
     {
     texto : "Rolls de canela y manzana",
-    imgn :"https://recetas-rapidas.es/wp-content/uploads/2018/10/Rollos-de-canela-receta-724x477.jpg",
+    imgn :"https://www.collico.cl/wp-content/uploads/2021/06/Rollos-de-canela-receta-724x477-1.jpeg",
     
     },
     {
@@ -38,7 +38,7 @@ const mock = [
     name : "<h4>Alfajor integral <br> con dulce de leche de coco<h4>",
     },
     {
-    texto : "<p>Ingredientes :<br> Harina integral organica ,<br> mix de semillas , sal y aceite de girasol<p>.",
+    texto : "<p>Ingredientes :<br> Harina integral organica ,<br> mix de semillas , sal y <br>aceite de girasol<p>.",
     imgn :AllImages.bizcochos,
     id : 3,
     name : "<h4>Bizcochos integrales <br> con mix de semillas<h4>",
@@ -68,10 +68,10 @@ const mock = [
     name : "<h4>Pan integral ,<br> con mix de semillas<h4>",
     },
     {
-    texto : "budines integrales (banana , zanahoria , chocolate , remolacha)",
+    texto : "<p>Chocolate y coco<br>Arandanos y limon <br>Banan y chips de chocolate <br>Manzana y canela<br> Limon  ,jengibre y coco <br>Zanahorias , naranjas y nueces<p>",
     imgn :AllImages.budinChocolate,
     id : 8,
-    name : "budinChocolate",
+    name : "<h4>Variedad en budines<h4>",
     },
 ];
 export  {
