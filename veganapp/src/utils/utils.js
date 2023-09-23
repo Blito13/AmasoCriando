@@ -68,7 +68,7 @@ const mock = [
     name : "<h4>Pan integral ,<br> con mix de semillas<h4>",
     },
     {
-    texto : "<p>Chocolate y coco<br>Arandanos y limon <br>Banan y chips de chocolate <br>Manzana y canela<br> Limon  ,jengibre y coco <br>Zanahorias , naranjas y nueces<p>",
+    texto : "<p>Chocolate y coco<br>Arandanos y limon <br>Banana y chips de chocolate <br>Manzana y canela<br> Limon  ,jengibre y coco <br>Zanahorias , naranjas y nueces<p>",
     imgn :AllImages.budinChocolate,
     id : 8,
     name : "<h4>Variedad en budines<h4>",

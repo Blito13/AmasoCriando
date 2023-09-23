@@ -3,7 +3,7 @@ import {mock ,productos} from "../../utils/utils";
 import Card from "../Card/Card";
 import React,{useState  } from "react";
 const Products = () =>{
-console.log(mock);
+
 const [from ,setFrom ] = useState(0);
 const [to , setTo] = useState(3);
 const [opac ,setOpac] =useState("");

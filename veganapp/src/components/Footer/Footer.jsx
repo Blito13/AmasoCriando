@@ -6,13 +6,10 @@ import * as AllImages from '../../media/realMedia/indexMedia.js';
 import { Link  } from "react-router-dom"; 
 
 const {whatsapp , facebook , instagram , email , twitter} = AllImages;
-console.log(whatsapp)
-const lang = "ES";
-const Key1 =  process.env.REACT_APP_KEY_1;
-const Key2 =  process.env.REACT_APP_KEY_2;
-const Key4 =  process.env.REACT_APP_KEY_3;
+
+
 const Footer = () => {
-  console.log(AllImages)
+
     return (
     <div className={styles.container}>
     <div className={styles.innercontainer}>
@@ -45,9 +42,22 @@ const Footer = () => {
         <ul className={styles.sociallinks}>
         <h3 className={styles.footertitles}>Contact</h3>
         <div className={styles.lista_resp}>
-            <li><img src={facebook} className={styles.icono}/>Facebook</li>
-            <li><img src={whatsapp} className={styles.icono}/>Whatsapp</li>
-            <li><img src={instagram} className={styles.icono}/>Instagram</li>
+            <li>
+                <img src={facebook} className={styles.icono}/>
+                <a  className ={styles.links}href = "https://www.facebook.com/profile.php?id=100050808798787">Facebook
+                </a>
+                </li>
+            <li>
+                <img src={whatsapp} className={styles.icono}/>
+                <a  className ={styles.links}href = "https://wa.me/3515935709">Whatsapp
+                </a>
+                </li>
+            <li>
+                <img src={instagram} className={styles.icono}/>
+                <a  className ={styles.links}href = "https://instagram.com/amasocriando">Istagram
+                </a>
+                </li>
+            
         </div> 
         </ul>
     </div>

@@ -60,6 +60,7 @@ const Contact = ()=>{
       }
       setConfirm("loading");
       setSending(true);
+      console.log(Key1,Key2 ,Key4)
       emailjs.sendForm(Key1, Key2 ,form.current, Key4)
       .then((res)=> {
   
@@ -95,7 +96,7 @@ const Contact = ()=>{
                 <Infobox
                   subtitle={"Charlemos!"}
                   text={
-                    "Me encantaría hablar con vos.<br />Desde este formulario la página me envía un email directamente a mi correo.<br /> Podés ponerlo a prueba escribiéndome un mensaje breve para que te responda. "
+                    "Me encantaría hablar con vos.<br />Desde este formulario la página me envía un email directamente a mi correo."
                   }
                 />
               )}

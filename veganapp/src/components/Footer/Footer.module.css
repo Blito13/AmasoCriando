@@ -32,6 +32,8 @@ h3 {
 
 li {
   padding: 0.3rem;
+  display: flex;
+
 }
 
 .flink {
@@ -73,6 +75,11 @@ li {
   color: #6584d5;
   margin-top: 1rem;
   cursor: pointer;
+}
+.links{
+  
+  text-decoration: none;
+  color :gray;
 }
 
 @media (max-width: 600px) {
@@ -117,7 +124,9 @@ li {
     text-decoration: none;
     margin-right: 1rem;
     margin-bottom: -1rem;
+    
   }
+  
 
   .copyright {
     margin-top: 3rem;
