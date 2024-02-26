@@ -15,12 +15,12 @@ const productos = [
     },
     {
     texto : "Rolls de canela y manzana",
-    imgn :"https://www.collico.cl/wp-content/uploads/2021/06/Rollos-de-canela-receta-724x477-1.jpeg",
+    imgn :"https://cookpad.com/do/recipe/images/26329c2271a542f8",
     
     },
     {
     texto : "Variedad en budines",
-    imgn :"https://www.almacenconsciente.com/2018/wp-content/uploads/2016/12/budin.jpg",
+    imgn :"https://cookpad.com/ar/recipe/images/a32310e20a99bfe6",
     
     },
 ];
